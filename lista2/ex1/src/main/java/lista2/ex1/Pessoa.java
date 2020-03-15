@@ -5,7 +5,13 @@ public abstract class Pessoa{
     public int idade;
     public String nome;
 
-    public Pessoa(String _nome, int _idade, String _cpf){
+    public Pessoa(String _nome, int _idade, String _cpf)throws Exception{
+        if(_idade <= 0){
+            throw new Exception("idade inválida");
+        }
+        if(_cpf == null || _cpf == ""){
+            throw new Exception("cpf inválido");
+        }
         this.nome = _nome;
         this.idade = _idade;
         this.cpf = _cpf;
@@ -22,6 +28,6 @@ public abstract class Pessoa{
         
     @Override
         public int hashCode(){
-            return 
+            return Integer.parseInt(this.cpf);
         }
 }
