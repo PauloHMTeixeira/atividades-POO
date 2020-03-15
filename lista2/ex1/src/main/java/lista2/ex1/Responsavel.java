@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import lista2.ex1.Pessoa;
 
 public class Responsavel extends Pessoa{
-    public Responsavel(String _nome, int _idade, String _cpf){
+    public Responsavel(String _nome, int _idade, String _cpf)throws Exception{
         super(_nome, _idade, _cpf);
     }
     public Aluno aluno;
