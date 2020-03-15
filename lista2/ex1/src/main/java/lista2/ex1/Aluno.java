@@ -1,7 +1,7 @@
 package lista2.ex1;
 
 public class Aluno extends Pessoa{
-    public Aluno(String _nome, int _idade, String _cpf){
+    public Aluno(String _nome, int _idade, String _cpf) throws Exception{
         super(_nome, _idade, _cpf);
         this.nome = _nome;
         this.idade = _idade;
